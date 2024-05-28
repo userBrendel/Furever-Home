@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/paw">
+
+    <ImageView
+        android:id="@+id/backButtonPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:contentDescription="Back Button" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="@font/maiin_font"
+        android:text="POST PET FOR FUREVER HOME"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="226dp"
+        android:layout_height="227dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/post" />
+
+    <EditText
+        android:id="@+id/editTextPetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Pet Name" />
+
+    <EditText
+        android:id="@+id/editTextPetAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pet Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTextPetLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pet Location" />
+
+    <EditText
+        android:id="@+id/editTextPetBreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pet Breed" />
+
+    <EditText
+        android:id="@+id/editTextPetImageUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pet Image URL" />
+
+    <EditText
+        android:id="@+id/editTextPetDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pet Details" />
+
+    <EditText
+        android:id="@+id/editTextPetExtraDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Extra Details" />
+
+    <Button
+        android:id="@+id/buttonAddPet"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maiin_font"
+        android:text="Add Pet"
+        android:textSize="20sp" />
+
+
+
+</LinearLayout>

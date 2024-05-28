@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/paw"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/maiin_font"
+        android:text="Choose a Pet Category"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/categoryLayout"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/dogsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="283dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:onClick="onDogsClicked"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewDogs"
+                android:layout_width="245dp"
+                android:layout_height="200dp"
+                android:contentDescription="Dogs"
+                android:src="@drawable/dog" />
+
+            <TextView
+                android:id="@+id/textViewDogs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Dogs"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/catsLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/box"
+            android:gravity="center"
+            android:onClick="onCatsClicked"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageViewCats"
+                android:layout_width="264dp"
+                android:layout_height="200dp"
+                android:contentDescription="Cats"
+                android:src="@drawable/cat" />
+
+            <TextView
+                android:id="@+id/textViewCats"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cats"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- First TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/maiin_font"
+        android:gravity="center"
+        android:text="Welcome to Furever Home"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/pawrents" />
+
+    <!-- Second TextView -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Welcome to Furever Home, the ultimate platform for compassionate pet lovers and animals in need of a loving family. Our mission is to connect caring pet parents with pets searching for their forever homes. Whether you’re looking to adopt a playful puppy, a cuddly kitten, or a loyal senior pet, we are here to help you find the perfect match."
+        android:textSize="16sp" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/buttonDismiss"
+        style="@android:style/Widget.Material.Light.Button.Toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#706EA8"
+        android:fontFamily="@font/maiin_font"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:iconTint="#FFFFFF" />
+</LinearLayout>

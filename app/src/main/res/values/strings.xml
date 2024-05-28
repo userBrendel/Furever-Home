@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Furever Home</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="age_format">Age: %1$d</string>
+    <string name="location_format">Location: %1$s</string>
+    <string name="breed_format">Breed: %1$s</string>
+    <string name="pet_details">Pet Details</string>
+    <string name="book_appointment">Book Appointment</string>
+
+</resources>
